@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Bootstrap Themes by Zerotheme dot com - Free Responsive Html5 Templates">
+    <meta name="author" content="https://www.Zerotheme.com">
+
+    <title>WordMemo | Your Vocabulary Asistant</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link href="css/animate.css" rel="stylesheet" media="all" type="text/css">
+
+    <!-- Lightbox.css -->
+    <link href="css/lightbox.min.css" rel="stylesheet" media="all" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" class="index-page">
+<div class="wrap-body">
+
+    <!--////////////////////////////////////Header-->
+    <header>
+        <!---Main Header--->
+        <div class="main-header">
+            <div class="logo">
+                <img src="images/logo.png" class="img-responsive">
+            </div>
+            <!--Navigation-->
+            <nav id="menu" class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <span id="heading" class="visible-xs">Categories</span>
+                        <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/">Home</a></li>
+                            <% console.log(user) %>
+                            <% if( user ) { %>
+                            <li><a href="/learn">Start Learning</a></li>
+                            <li><a href="/voclist">Vocabulary List</a></li>
+                            <li><a href="/wordbank">My Word Bank</a></li>
+                            <li><a href="/schedule">Learning Schedule</a></li>
+                            <li><a href="/setting">Settings</a></li>
+                            <li><a href="/"><i class="fa fa-user"></i> <%= user.email %></a></li>
+                            <li><a href="/users/logout"><i class="fa fa-comments"></i> Sign Out</a></li>
+                            <% }else { %>
+                            <li><a href="/login">Start Learning</a></li>
+                            <li><a href="/login">Vocabulary List</a></li>
+                            <li><a href="/login">My Word Bank</a></li>
+                            <li><a href="/login">Learning Schedule</a></li>
+                            <li><a href="/login">Settings</a></li>
+                            <li><a href="/login"><i class="fa fa-comments"></i> Sign In</a></li>
+                            <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--<div class="hero-background">-->
+            <!--&lt;!&ndash; Static Header &ndash;&gt;-->
+            <!--<div class="header-text">-->
+            <!--<div class="header-text-inner">-->
+            <!--<h1>WordMemo</h1>-->
+            <!--</div>-->
+            <!--</div>&lt;!&ndash; /header-text &ndash;&gt;-->
+            <!--</div>-->
+        </div>
+    </header>
+    <!-- /Section: intro -->
+
+
+    <!--////////////////////////////////////Container-->
+    <section id="page-content" class="index-page">
+
+        <section class="box-content box-2 box-style-1">
+            <div class="container">
+                <div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+                    <h3 id="word"><%= list['word'] %></h3>
+                    <hr class="line">
+                </div>
+                <div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+                    <h6><%= list['chinese'] %> </h6>
+                    <h6><%= list['english'] %> </h6>
+                </div>
+                <div class="heading wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s">
+                    <a href="/wordbank" class="btn btn-skin">Return</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ////////////Content Box 02 -->
+        <section class="box-content box-2 box-style-2">
+
+        </section>
+
+    </section>
+
+    <!--////////////////////////////////////Footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="wrap-footer">
+                <ul class="list-inline footer-link link">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Google +</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+                <div class="copyright">
+                    <span>Copyright © 2018 - Template Designed by <a href="https://www.Zerotheme.com" target="_blank">Zerotheme</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <div id="page-top"><a href="#page-top" class="btn btn-toTop"><i class="fa fa-angle-double-up"></i></a></div>
+
+    <!-- ========== Scripts ========== -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+
+    <!-- Definity JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</div>
+</body>
+</html>

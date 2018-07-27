@@ -1,0 +1,16 @@
+{
+  "host": "localhost",
+  "port": 3000,
+  "connect": "mongodb://localhost:27017/wordmemo",
+  "mailoptions": {
+    "service": "163",
+    "email": "wordmemoregister@163.com",
+    "password": "wordmemo2018x"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 27017,
+    "user": "",
+    "password": ""
+  }
+}
