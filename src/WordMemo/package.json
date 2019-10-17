@@ -17,7 +17,7 @@
     "http-errors": "~1.6.2",
     "mongodb": "latest",
     "mongoose": "^5.1.5",
-    "morgan": "~1.9.0",
+    "morgan": "~1.9.1",
     "randomstring": "^1.1.5"
   },
   "devDependencies": {
